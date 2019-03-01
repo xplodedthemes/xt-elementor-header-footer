@@ -110,7 +110,7 @@ class XT_Elementor_Header_Footer {
 		/* Translators: URL to install or activate Elementor plugin. */
 		echo 	'<p>'. 
 				sprintf( 
-					esc_html__( 'The %s plugin requires  plugin installed & activated.', 'xt-elementor-header-footer' ), 
+					esc_html__( 'The %s plugin requires %s plugin installed & activated.', 'xt-elementor-header-footer' ), 
 					'<strong>XT Elementor Header Footer</strong>',
 					'<strong><a href="'.esc_url($url).'">Elementor</strong></a>' 
 				).
