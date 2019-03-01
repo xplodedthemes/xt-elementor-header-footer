@@ -108,7 +108,13 @@ class XT_Elementor_Header_Footer {
 
 		echo '<div class="notice notice-error">';
 		/* Translators: URL to install or activate Elementor plugin. */
-		echo '<p>' . sprintf( esc_html__( 'The <strong>XT Elementor Header Footer</strong> plugin requires <strong><a href="%s">Elementor</strong></a> plugin installed & activated.', 'xt-elementor-header-footer' ) . '</p>', $url );
+		echo 	'<p>'. 
+				sprintf( 
+					esc_html__( 'The %s plugin requires  plugin installed & activated.', 'xt-elementor-header-footer' ), 
+					'<strong>XT Elementor Header Footer</strong>',
+					'<strong><a href="'.esc_url($url).'">Elementor</strong></a>' 
+				).
+				'</p>';
 		echo '</div>';
 	}
 
